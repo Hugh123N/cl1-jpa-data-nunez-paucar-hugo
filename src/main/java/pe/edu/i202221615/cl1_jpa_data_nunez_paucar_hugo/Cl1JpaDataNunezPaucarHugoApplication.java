@@ -8,6 +8,8 @@ import pe.edu.i202221615.cl1_jpa_data_nunez_paucar_hugo.model.city;
 import pe.edu.i202221615.cl1_jpa_data_nunez_paucar_hugo.model.country;
 import pe.edu.i202221615.cl1_jpa_data_nunez_paucar_hugo.repository.CountryRepository;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 @SpringBootApplication
@@ -42,6 +44,12 @@ public class Cl1JpaDataNunezPaucarHugoApplication implements CommandLineRunner {
 					});
 				}
 		);
+
+		// Lista de IDs de los países a eliminar
+		/*List<String> countryIdsToDelete = Arrays.asList("COL", "ARG");
+
+		countryRepository.deleteAllById(countryIdsToDelete);
+		System.out.println("Países eliminados con sus ciudades y lenguajes asociados");*/
 
 	}
 }
